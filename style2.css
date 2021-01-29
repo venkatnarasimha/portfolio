@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    background-color: rgb(54, 47, 50);
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigation{
+    overflow: hidden;
+    padding: 10px;
+		background-color: transparent;
+		font-size: 20px;
+		text-align: right;
+		line-height: 40px;
+}
+.navigation a{
+	margin:auto;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 12px;
+
+}
+.navigation a:hover {
+	background-color: crimson;
+	border-radius: 5px;
+
+}
+.navigation a:active {
+	
+	color: white;
+	border-radius: 5px;
+
+}
+.navigation home {
+	text-align: left;
+	color: blue
+}
+.header{
+    background-image: url(1.jpg);
+    /* background-attachment: scroll; */
+    /* background-size: cover; */
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    height: 70%;
+}
+.header-heading{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align:center;
+    color: white;
+    display: block;
+    width: auto;
+    position: absolute;
+    bottom:250px;
+    left: 100px;
+}
+header h3{
+    font-size: 30px;
+}
+span{
+    color: crimson;
+}
+.line{
+    color: white;
+}
+.hr{
+    background-color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.project-list h1{
+    text-decoration: dashed;
+}
+.project-list{
+    margin-left:50px ;
+
+    
+}
+.project-main-heading{
+    text-align: center;
+    /* color: crimson; */
+    font-size: 30px;
+}
+.projects{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.skill-list{
+    font-size: 15px;
+    text-align: center;
+}
+.inner-heading{
+    margin-left: 20px;
+}
+.inner-heading a{
+    color: white;
+    text-decoration: none;
+    
+}
+.inner-heading a:hover{
+    color: crimson;
+}
+.list-head{
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-left:60px;
+    margin-right: 60px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.sub-heading{
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left:60px;
+    margin-right: 60px;
+}
+footer{
+    background-image: url("1.jpg");
+    background-color: tomato;
+    padding: 5px 5px;
+   
+    
+}
+footer .icons{
+    position: absolute;
+    display:contents;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+footer p{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 0px;
+}
+footer .scrollincon{
+    
+    display:contents;
+    margin-right: 0%;
+  
+}
+.mail{
+    margin-left: 525px;
+    text-align:center;
+    color: yellow;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform:lowercase;
+}
+footer span{
+    display: inline;
+    position: static;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 0px;
+    padding-left: 1200px;
+}
