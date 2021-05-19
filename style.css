@@ -23,13 +23,13 @@ body {
 }
 
 .navigation{
-    overflow: hidden;
-    padding: 10px;
+  overflow: hidden;
+  padding: 10px;
 	background-color: transparent;
 	font-size: 20px;
-    font-family: var(--font);
+  font-family: var(--font);
 	text-align: right;
-    position:relative;
+  position:relative;
 	line-height: 40px;
 }
 .navigation a{
@@ -164,7 +164,7 @@ span{
     opacity: 0.6;
 }
   
-  /* ---------- skills section ---------- */
+/* ---------- skills section ---------- */
   .skills {
     width: 100%;
     /* height: 50em; */
@@ -402,6 +402,12 @@ footer .social_media_icons a:hover i
     }
 }
 @media (max-width: 700px) {
+   .navigation {
+     text-align: left;
+     padding: 5px;
+	   background-color: transparent;
+	   font-size: 15px;
+   }
     body {
       font-size: 13px;
     }
@@ -434,60 +440,8 @@ footer .social_media_icons a:hover i
     }
 }
 
-/* --------- toggle ---------- */
-.toggle{
-    width: 200px;
-    height: 200px;
-    backdrop-filter: blur(20px);
-    border-radius: 15px;
-    background: rgba(20, 20, 20, 0.178);
-    position: fixed;
-    top: 250px;
-    right: 10px;
-    z-index: 100;
-    flex-direction: column;
-    justify-content: space-evenly;
-    transition: all .4s;
-  }
-  .toggle .box a{
-    flex-direction: column;
-    text-decoration: none;
-  }
-  .toggle .box a i{
-    font-size: 18px;
-  }
-  .toggle .box a p{
-    font-size: 12px;
-    margin-top: 8px
-  }
-  .toggle .box:nth-child(2){
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  .toggle .box input{
-    width: 40px;
-    height: 40px;
-    -webkit-appearance: none;
-    cursor: pointer;
-    border-radius: 10px;
-    background: rgb(31, 31, 31);
-    border: 6px solid rgba(255, 255, 255, 0.459);
-  }
-  .toggle.active .box input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-  }
-  .toggle.active{
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-  }
-  /* ---------- Media Query ---------- */
-  @media (max-width: 1120px) {
+/* ---------- Media Query ---------- */
+@media (max-width: 1120px) {
     #main .user_img img {
       width: 25em;
       height: 25em;
