@@ -299,7 +299,94 @@ span{
     font-size: 3em;
     font-family: var(--font);
 }
-  
+/* ---------- Certification & Blogs ---------- */
+.blogs {
+  width: 100%;
+  padding: 2em 0;
+  position: relative;
+  flex-direction: column;
+  background: #252a34;
+  overflow-x: hidden;
+}
+.blogs::before,
+.blogs::after {
+    content: "";
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    background: linear-gradient(
+      to right,
+      #b91d73,
+      #f953c6
+    ); 
+    border-radius: 50%;
+}
+.blogs::before {
+    left: -10em;
+    bottom: 0;
+}
+.blogs::after {
+    right: -10em;
+    top: 8em;
+    background: linear-gradient(
+      to right,
+      #4a00e0,
+      #8e2de2
+    ); 
+}
+.blogs .project_heading {
+    margin-bottom: 0.4em;
+    font-size: 3em;
+    font-family: var(--font);
+}
+.blogs .container {
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.blogs .container .main_box {
+    width: 35em;
+    height: 12em;
+    margin: 0.5em 2em;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.199);
+}
+.blogs .container .main_box .icon {
+    width: 2em;
+    height: 150px;
+    margin-left: 0.1em;
+    font-size: 8em;
+}
+.blogs .container .main_box .box {
+    width: 20em;
+    margin-left: 0.8em;
+    padding-right: 0.5em;
+}
+.blogs .container .main_box .box :is(h1, p) {
+    margin-bottom: 0.5em;
+}
+.blogs .container .main_box .box p{
+    opacity: 0.6;
+}
+.blogs .container .main_box .box .links a {
+    color: var(--light-color);
+    text-decoration: none;
+    margin-right: 0.4em;
+    transition: all 0.4s;
+}
+.blogs .container .main_box .box .links a i {
+    margin-left: 0.4em;
+    transition: all 0.4s;
+}
+.blogs .container .main_box .box .links a:hover {
+    color: var(--secondary-color);
+}
+.blogs .container .main_box .box .links a:hover i {
+    transform: translateX(0.2em);
+    color: var(--secondary-color);
+}
   /* ---------- projects ---------- */
 .projects {
     width: 100%;
