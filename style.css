@@ -155,7 +155,7 @@ span{
     margin: 2em;
 }
 .about_heading {
-    font-size: 6em;
+    font-size: 3em;
     font-family: var(--font);
 }
 .about p {
@@ -163,7 +163,63 @@ span{
     color: var(--color);
     opacity: 0.6;
 }
-  
+/* ---------- Work Experiencce ------- */
+.work {
+  width: 100%;
+  /* height: 50em; */
+  /* margin: 2em 0; */
+  position: relative;
+  flex-direction: column;
+  overflow-x: hidden;
+  background: #1a1a1a;
+  padding: 6em 0;
+}
+.work_box {
+  flex-wrap: wrap;
+}
+.work_box .box {
+  margin: 2em 2em;
+  width: 15em;
+  height: 12em;
+  background: var(--bg-dark);
+  background: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.068);
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.work_box .box::before {
+  content: "";
+  position: absolute;
+  background: var(--secondary-color);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform-origin: bottom;
+  transform: scaleY(0.03);
+  transition: all 0.3s;
+}
+.work_box .box:hover::before {
+  transform: scaleY(1);
+}
+.work_box .box i {
+  margin-bottom: 0.1em;
+}
+.work_head {
+  font-size: 3em;
+  font-family: var(--font);
+}
+.ul {
+ padding-left: 10%;
+}
 /* ---------- skills section ---------- */
   .skills {
     width: 100%;
@@ -240,7 +296,7 @@ span{
     margin-bottom: 0.1em;
 }
 .skill_head {
-    font-size: 6em;
+    font-size: 3em;
     font-family: var(--font);
 }
   
@@ -281,7 +337,7 @@ span{
 }
 .projects .project_heading {
     margin-bottom: 0.4em;
-    font-size: 6em;
+    font-size: 3em;
     font-family: var(--font);
 }
 .projects .container {
